@@ -1,6 +1,7 @@
 %!TEX TS-program = xelatex
-\documentclass[a4]{friggeri-cv}
-\addbibresource{bibliography.bib}
+\documentclass[]{friggeri-cv}
+\usepackage{fontspec}
+\addbibresource{bibliography}
 
 \begin{document}
 \header{JJ}{Merelo}
@@ -18,121 +19,106 @@
     \href{mailto:jj@merelo.net}{jj@merelo.net}
     \href{http://jj.merelo.net}{http://jj.merelo.net}
     \href{http://twitter.com/jjmerelo}{{\tt @jjmerelo}}
-    \href{http://scholar.google.com/citations?user=gFxqc64AAAAJ}{Google
-    Scholar Profile}
-   \href{https://www.researchgate.net/profile/JJ_Merelo/?ev=hdr_xprf}{ResearchGate
-   profile}
+    \href{http://scholar.google.com/citations?user=gFxqc64AAAAJ}{Google Scholar}
+   \href{https://www.researchgate.net/profile/JJ_Merelo}{ResearchGate}
+   \href{https://github.com/JJ}{GitHub}
+   \href{http://lnkd.in/dBVqYPa}{LinkedIn}
   \section{languages}
     bilingual Spanish/English
     spoken French \& Italian
     German notions
   \section{programming}
     {\color{red} $\varheartsuit$} Perl
-    (ES5, node.js)
-    Python, C, OCaml
-    CSS3 \& HTML5
+    {\color{red} $\varheartsuit$} JavaScript ({\tt node.js}, DOM)
+    Python, Ruby, shell, CSS3 \& HTML5, JQuery, chef
 \end{aside}
 
 \section{interests}
 
-complex networks, social networks, community detection, community structure,
-overlapping communities, information diffusion, viral marketing, social
-inference, recommendation, data mining
+evolutionary algorithms, complex networks, social networks, emerging
+computing, literary engineering, distributed computing, stealth
+computing, gaming
 
 \section{education}
 
 \begin{entrylist}
   \entry
-    {since 2009}
-    {Ph.D. {\normalfont candidate in Computer Science}}
-    {DNET/INRIA, LIP/ÉNS de Lyon}
-    {\emph{A Quantified Theory of Social Cohesion.}}
+    {1994}
+    {Ph.D. {\normalfont in Physics}}
+    {University of Granada}
+    {\emph{Evolutionary neural networks}}
   \entry
-    {2007–2008}
+    {1988}
     {M.Sc. magna cum laude}
-    {IXXI, École Normale Supérieure de Lyon}
-    {Majoring in Computer Science\\
-    Specialization in Complex Systems}
+    {University of Granada}
+    {Majoring in Physics\\
+    Specialization in Theoretical Physics}
   \entry
-    {2006–2007}
-    {B.Sc. magna cum laude}
-    {École Normale Supérieure de Lyon}
-    {Majoring in Computer Science}
-  \entry
-    {2003–2006}
-    {Classes Préparatoires aux Grandes Écoles}
-    {Lycée Fénelon, Lycée Louis le Grand, Paris}
-    {Preparation for national competitive entrance exams to leading French ``grandes écoles'', specializing in mathematics and physics.}
-  \entry
-    {2003}
-    {French Baccalauréat S. with honors}
-    {Lycée Louis le Grand, Paris}
-    {Specialization in mathematics and physics}
+    {1983–1988}
+    {Avg B+}
+    {University of Granada}
+    {Physics}
 \end{entrylist}
 
 \section{experience}
 
 \begin{entrylist}
   \entry
-    {02–07 2009}
-    {LIP6/CNRS, Paris}
-    {Research Internship.}
-    {\emph{Visualization of complex networks.}}
+    {1988-2008}
+    {University of Granada}
+    {Assistant professor}
+    {\emph{Dept. of Computer Architecture}}
   \entry
-    {06–08 2008}
-    {ISCPIF/CNRS, Paris}
-    {Research Internship.}
-    {\emph{Diffusion in the Blogosphere. Happy Flu.}}
-  \entry
-    {06–08 2007}
-    {LIP6/CNRS, Paris}
-    {Research Internship.}
-    {\emph{Kernels in real world networks.}}
-  \entry
-    {07–08 2005}
-    {\href{http://www.kelkoo.com}{Kelkoo.com}}
-    {Summer job.}
-    {\emph{Creation of a keyword generator for Google Adwords.}}
-  \entry
-    {07–08 2004}
-    {\href{http://www.monsieurprix.com}{MonsieurPrix.com}}
-    {Summer job.}
-    {\emph{Development of an e-commerce product indexation spider.}}
+    {2008-}
+    {University of Granada}
+    {Full professorship.}
+    {\emph{Dept. of computer architecture}}
+    \entry
+    {2008-}
+    {University of Granada}
+    {Director.}
+    {\href{http://osl.ugr.es}{\emph{Free Software Office}}}
 \end{entrylist}
+
+\section{awards}
+\begin{entrylist}
+ \entry
+    {2009}
+    {Bubok literary prize}
+    {\href{http://cultura.elpais.com/cultura/2009/05/06/actualidad/1241560804_850215.html}{1st
+        edition of this prize}}
+    {Awarded to the novel {\tt lujoyglamour.net}.}
+\end{entrylist}
+
 
 \section{applications}
 
 \begin{entrylist}
   \entry
-    {2012}
-    {Who did I forget ?}
-    {\href{http://whodidiforget.com}{whodidiforget.com}}
-    {Guest list recommendation for Facebook events based on friends already attending the event.}
-  \entry
-    {2011}
-    {Fellows}
-    {\href{http://fellows-exp.com}{fellows-exp.com}}
-    {Automatic community detection among Facebook Friends in order to validate the \emph{cohesion} measure, creation of friend lists.}
-  \entry
-    {2008}
-    {Happy Flu}
-    {\href{http://happyflu.com}{happyflu.com}}
-    {Experiment aimed to measure viral spreading of content across the blogosphere.}
+    {2004-}
+    {{\tt Algorithm::Evolutionary}}
+    {\href{http://search.cpan.org/dist/Algorithm-Evolutionary/}{http://search.cpan.org/dist/Algorithm-Evolutionary/}}
+    {Evolutionary Algorithm Library in Perl.}
+
 \end{entrylist}
 
 \section{publications}
 
+These are a few of my publications. I published my first paper before
+graduation: 
 
-\printbibsection{article}{article in peer-reviewed journal}
-\begin{refsection}
-  \nocite{*}
-  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=subbibliography]
-\end{refsection}
-\begin{refsection}
-  \nocite{*}
-  \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=subbibliography]
-\end{refsection}
-\printbibsection{misc}{other publications}
-\printbibsection{report}{research reports}
+\cite{merelo88} 
+and my first paper in a journal a few years
+afterwards, getting already into parallel computing:
+
+\cite{parallel90}. 
+I was working for a few years in a paper that
+applied Kohonen's Self-Organizing Map to protein structure prediction
+
+\cite{jjproteng} 
+and it hit pay dirt, since 20 years after it gathers
+several hundred references (and growing).
+
+%  \printbibliography
 
 \end{document}
