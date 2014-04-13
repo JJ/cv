@@ -1,4 +1,4 @@
-\ProvidesClass{friggeri-cv}[2012/04/30 CV class]
+\ProvidesClass{friggeri-jj-cv}[2014/04/13 CV class]
 \NeedsTeXFormat{LaTeX2e}
 
 \DeclareOption{print}{\def\@cv@print{}}
@@ -20,9 +20,11 @@
 \definecolor{darkgray}{HTML}{333333}
 \definecolor{gray}{HTML}{4D4D4D}
 \definecolor{lightgray}{HTML}{999999}
-
+\definecolor{dovegray}{HTML}{555555}
 \definecolor{green}{HTML}{C2E15F}
 \definecolor{orange}{HTML}{FDA333}
+\definecolor{blazeorange}{HTML}{FF6600}
+\definecolor{violet}{HTML}{660099}
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
@@ -47,16 +49,15 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+%\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-\newfontfamily\bodyfont[]{Helvetica Neue}
-\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
-\newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
+\newfontfamily\bodyfont[]{DroidSans}
+\newfontfamily\thinfont[]{DroidSans}
+\newfontfamily\headingfont[]{DroidSans-Bold}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
+\setmainfont[Mapping=tex-text, Color=textcolor]{DroidSans}
 
-\setmathfont{XITS Math}
 
 %%%%%%%%%%
 % Header %
@@ -101,6 +102,9 @@
         red\or%
         orange\or%
         green\or%
+        violet\or%
+        blazeorange\or%
+        dovegray\or%
         purple\else%
         headercolor\fi%
     } #1#2#3%
