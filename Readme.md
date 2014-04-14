@@ -4,10 +4,14 @@ Below this is the original README for the template I'm using. While I'm at it, I
 
 * This template uses XeLaTeX, not the standard LaTeX. So `sudo apt-get install texlive-xetex`
 * Besides, XeLaTeX seems to use `biber`, not BibTeX. So `sudo apt-get install biber`
-* I have tried to use Georgia as a default font and not include Math XITS.
+* Default font has been changed to Goudy BookLetter 1911. You'll have
+  to install. I took out XITS Math but the fallback font was not
+  instaled either, so you'll have to install it.
 * You will also have to install `texlive-fonts-extra` and `texlive-math-extra` 
 
-Sounds like hard work for a resumé, right? Well, you will have to do it only once and then you can use all the time you want. 
+Sounds like hard work for a resumé, right? Well, you will have to do
+it only once and then you can use all the time you want. I haven't
+managed to make it work for older versions of Ubuntu, though.
 
 
 ## About
@@ -19,6 +23,7 @@ Uses TikZ for the header, XeTeX and fontspec to use Helvetica Neue, biblatex to 
 ## License
 
 Copyright (C) 2012, Adrien Friggeri
+(c) 2014 JJ Merelo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

@@ -1,7 +1,6 @@
 %!TEX TS-program = xelatex
 \documentclass[]{friggeri-jj-cv}
 \addbibresource{bibliography}
-
 \begin{document}
 \header{JJ}{Merelo}
        {Professor at UGR}
@@ -14,7 +13,7 @@
     18071 Granada
     Spain
     ~
-    \href{mailto:jj@merelo.net}{jj@merelo.net}
+    \href{mailto:jj@meremarbolo.net}{jj@merelo.net}
     \href{http://jj.merelo.net}{http://jj.merelo.net}
     \href{http://twitter.com/jjmerelo}{{\tt @jjmerelo}}
     \href{http://scholar.google.com/citations?user=gFxqc64AAAAJ}{Google Scholar}
@@ -24,30 +23,30 @@
   \section{languages}
     bilingual Spanish/English
     spoken French \& Italian
-    German notions
+    German, Dutch notions
   \section{programming}
-    {\color{red} $\varheartsuit$} Perl
-    {\color{red} $\varheartsuit$} JavaScript ({\tt node.js}, DOM)
-    Python, Ruby, shell, CSS3 \& HTML5, JQuery, chef
+    {\color{red} \large $\varheartsuit$} Perl
+    {\color{red} $\varheartsuit$} JavaScript ({\tt node.js}, browser, JQuery)
+    Lua, Python, Ruby, shell, CSS3 \& HTML5, R, chef
 \end{aside}
 
 \section{interests}
 
 evolutionary algorithms, complex networks, social networks, emerging
 computing, literary engineering, distributed computing, stealth
-computing, gaming
+computing, computational intelligence in games
 
 \section{education}
 
 \begin{entrylist}
   \entry
     {1994}
-    {Ph.D. {\normalfont in Physics}}
+    {Ph.D. {\normalfont in Physics} magna cum laude}
     {University of Granada}
     {\emph{Evolutionary neural networks}}
   \entry
     {1988}
-    {M.Sc. magna cum laude}
+    {M.Sc. {\normalfont in Physics} magna cum laude}
     {University of Granada}
     {Majoring in Physics\\
     Specialization in Theoretical Physics}
@@ -63,28 +62,30 @@ computing, gaming
 \begin{entrylist}
   \entry
     {1988-2008}
-    {University of Granada}
     {Assistant professor}
+    {University of Granada}
     {\emph{Dept. of Computer Architecture}}
   \entry
     {2008-}
-    {University of Granada}
     {Full professorship.}
+    {University of Granada}
     {\emph{Dept. of computer architecture}}
     \entry
     {2008-}
-    {University of Granada}
     {Director.}
+    {University of Granada}
     {\href{http://osl.ugr.es}{\emph{Free Software Office}}}
 \end{entrylist}
 
-\section{novel}
+\section{novel + application}
 \begin{entrylist}
   \entry
     {2013}
     {Manuel the Magnificent Mechanical Man}
     {\href{http://www.amazon.com/dp/B00ED084BK/}{Kindle Direct Publishing}}
-    {\href{http://jj.github.io/hoborg}{An open source novel}}
+    {\href{http://jj.github.io/hoborg}{An open source novel} with
+        software for continuous integration and others developed along with
+      it.}
 \end{entrylist}
 
 \section{awards}
@@ -95,6 +96,11 @@ computing, gaming
     {\href{http://cultura.elpais.com/cultura/2009/05/06/actualidad/1241560804_850215.html}{1st
         edition of this prize}}
     {Awarded to the novel {\tt lujoyglamour.net}.}
+ \entry
+    {April 2014}
+    {CS4HS award}
+    {\href{http://cs4hs.com}{Computer Science 4 High Schools}}
+    {Currently being developed as the Google/UGR Tech Campus for Girls}
 \end{entrylist}
 
 
@@ -105,14 +111,35 @@ computing, gaming
     {2004-}
     {{\tt Algorithm::Evolutionary}}
     {\href{http://search.cpan.org/dist/Algorithm-Evolutionary/}{http://search.cpan.org/dist/Algorithm-Evolutionary/}}
-    {Evolutionary Algorithm Library in Perl.}
+    {Evolutionary Algorithm Library in Perl. There are
+      \href{http://search.cpan.org/~jmerelo/}{several other modules at
+      CPAN, the Comprehensive Perl Archive Network}}
+  \entry
+    {2014-}
+    {{\tt NodEO}}
+    {\href{https://npmjs.org/package/nodeo}{https://www.npmjs.org/package/nodeo}}
+    {Evolutionary Algorithm Library in JavaScript for NodeJS}
+\end{entrylist}
 
+\section{international projects}
+
+\begin{entrylist}
+  \entry
+    {2001-2005}
+    {{\sf DREAM} Distributed Resource Evolutionary Algorithm Machine}
+    {\href{http://www.soc.napier.ac.uk/~benp/dream/dream.htm}{Dream
+        Project page}}
+    {Peer to peer, asynchronous, evolutionary computation}
+  \entry
+    {2012-}
+    {Muses project}
+    {\href{https://musesproject.eu/}{https://npmjs.org/package/nodeo}}
+    {Mobile, user centered, adaptive security}
 \end{entrylist}
 
 \section{publications}
 
-These are a few of my publications. I published my first paper before
-graduation: 
+I published my first paper before graduation: 
 
 \cite{merelo88} 
 and my first paper in a journal a few years
@@ -124,7 +151,23 @@ applied Kohonen's Self-Organizing Map to protein structure prediction
 
 \cite{jjproteng} 
 and it hit pay dirt, since 20 years after it gathers
-several hundred references (and growing).
+several hundred references (and growing). Let's not dwell in the past
+and talk about current developments. I was PhD advisor for JLJ Laredo,
+who continued with DREAM development. This paper is a good example of
+our work in the area
+
+\cite{evag:gpem}
+but his work raised several issues about how asynchronous distributed
+evolutionaory computing worked, which we addressed in this paper in
+which I am the first author
+
+\cite{jj:2008:PPSN}
+problems similar to what we found in our work on browser-based
+evolutionary algorithms 
+
+\cite{agajaj}
+long before browser-based botnets were discovered. As of today, >4000
+citations and and $H=24$ according to Google Scholar.
 
 %  \printbibliography
 

@@ -28,6 +28,7 @@
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
+\definecolor{mistake}{HTML}{3A111C}
 
 \ifdefined\@cv@print
   \colorlet{green}{gray}
@@ -49,15 +50,16 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-%\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-\newfontfamily\bodyfont[]{DroidSans}
-\newfontfamily\thinfont[]{DroidSans}
-\newfontfamily\headingfont[]{DroidSans-Bold}
+\newfontfamily\bodyfont[]{Goudy Bookletter 1911}
+\newfontfamily\thinfont[]{GoudyBookletter1911Light}
+\newfontfamily\headingfont[]{GoudyBookletter1911Bold}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{DroidSans}
+\setmainfont[Mapping=tex-text, Color=textcolor]{Goudy Bookletter 1911}
 
+\setmathfont{XITS Math}
 
 %%%%%%%%%%
 % Header %
@@ -104,8 +106,8 @@
         green\or%
         violet\or%
         blazeorange\or%
-        dovegray\or%
-        purple\else%
+        purple\or%
+        mistake\else%
         headercolor\fi%
     } #1#2#3%
   }%
@@ -184,13 +186,9 @@
 \DeclareFieldFormat[report]{title}{#1\par}
 
 \DeclareBibliographyDriver{article}{%
-  \printfield{title}%
-  \newblock%
-  \printnames{author}%
-  \par%
-  \newblock%
-  {%
-    \footnotesize\addfontfeature{Color=lightgray}\itshape%
+    {%
+      \addfontfeature{Color=lightgray}\itshape%
+      \printfield{title}  \footnotesize\printnames{author}; 
     \usebibmacro{journal+issuetitle}%
     \setunit{\space}%
     \printfield{pages}%
@@ -204,13 +202,9 @@
 }
 
 \DeclareBibliographyDriver{inproceedings}{%
-  \printfield{title}%
-  \newblock%
-  \printnames{author}%
-  \par%
-  \newblock%
-  {%
-    \footnotesize\addfontfeature{Color=lightgray}%
+   {%
+      \addfontfeature{Color=lightgray}\itshape%
+      \printfield{title}  \footnotesize\printnames{author}; 
     \printfield{booktitle}%
     \setunit{\addcomma\space}%
     \printfield{year}%
