@@ -5,14 +5,13 @@ Below this is the original README for the template I'm using. While I'm at it, I
 * This template uses XeLaTeX, not the standard LaTeX. So `sudo apt-get install texlive-xetex`
 * Besides, XeLaTeX seems to use `biber`, not BibTeX. So `sudo apt-get install biber`
 * Default font has been changed to Goudy BookLetter 1911. You'll have
-  to install. I took out XITS Math but the fallback font was not
+  to install if (`ttf-goudybookletter` package). I took out XITS Math but the fallback font was not
   instaled either, so you'll have to install it.
 * You will also have to install `texlive-fonts-extra` and `texlive-math-extra` 
 
 Sounds like hard work for a resumé, right? Well, you will have to do
 it only once and then you can use all the time you want. I haven't
 managed to make it work for older versions of Ubuntu, though.
-
 
 ## About
 Latest version of my CV, typesetted in Helvetica and using colors inspired by Monokai (there is an `print` option which renders in black and white, and reverts the header to dark on light, if printing on paper is needed).

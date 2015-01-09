@@ -59,7 +59,7 @@
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor]{Goudy Bookletter 1911}
 
-\setmathfont{XITS Math}
+%\setmathfont{XITS Math}
 
 %%%%%%%%%%
 % Header %
