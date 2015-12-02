@@ -13,6 +13,14 @@ Sounds like hard work for a resumé, right? Well, you will have to do
 it only once and then you can use all the time you want. I haven't
 managed to make it work for older versions of Ubuntu, though.
 
+## Generate PDF
+
+	xelatex cv.tex
+	biber cv
+	xelatex cv.tex
+
+That's it.
+
 ## About
 Latest version of my CV, typesetted in Helvetica and using colors inspired by Monokai (there is an `print` option which renders in black and white, and reverts the header to dark on light, if printing on paper is needed).
 
