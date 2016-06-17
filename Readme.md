@@ -19,7 +19,12 @@ managed to make it work for older versions of Ubuntu, though.
 	biber cv
 	xelatex cv.tex
 
-That's it.
+That's it. This is conveniently encapsulated in `generate_cv.sh` so
+just writing
+
+	./generate_cv.sh
+
+will do the trick.
 
 ## About
 Latest version of my CV, typesetted in Helvetica and using colors inspired by Monokai (there is an `print` option which renders in black and white, and reverts the header to dark on light, if printing on paper is needed).
