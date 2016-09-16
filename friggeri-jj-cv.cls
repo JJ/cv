@@ -253,20 +253,20 @@
   \par\vspace{0.3\baselineskip}
 }
 
-\DeclareNameFormat{author}{%
-  \small\addfontfeature{Color=lightgray}%
-  \ifgiveninits
-    {\usebibmacro{name:given-family}
-      {\namepartfamily}
-      {\namepartgiveni}
-      {\namepartprefix}
-      {\namepartsuffix}}
-    {\usebibmacro{name:given-family}
-      {\namepartfamily}
-      {\namepartgiven}
-      {\namepartprefix}
-      {\namepartsuffix}}%
-  \usebibmacro{name:andothers}}
+% \DeclareNameFormat{author}{%
+%   \small\addfontfeature{Color=lightgray}%
+%   \ifgiveninits
+%     {\usebibmacro{name:given-family}
+%       {\namepartfamily}
+%       {\namepartgiveni}
+%       {\namepartprefix}
+%       {\namepartsuffix}}
+%     {\usebibmacro{name:given-family}
+%       {\namepartfamily}
+%       {\namepartgiven}
+%       {\namepartprefix}
+%       {\namepartsuffix}}%
+%   \usebibmacro{name:andothers}}
 
 \newcommand{\printbibsection}[2]{
   \begin{refsection}
