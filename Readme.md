@@ -5,7 +5,7 @@ Below this is the original README for the template I'm using. While I'm at it, I
 * This template uses XeLaTeX, not the standard LaTeX. So `sudo apt-get install texlive-xetex`
 * Besides, XeLaTeX seems to use `biber`, not BibTeX. So `sudo apt-get install biber`
 * Default font has been changed to Goudy BookLetter 1911. You'll have
-  to install if (`ttf-goudybookletter` package). I took out XITS Math but the fallback font was not
+  to install it (`ttf-goudybookletter` package). I took out XITS Math but the fallback font was not
   instaled either, so you'll have to install it.
 * You will also have to install `texlive-fonts-extra` and `texlive-math-extra` 
 
