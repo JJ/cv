@@ -1,4 +1,4 @@
-# JJ's short 2-page CV
+# JJ's short CV
 
 Below this is the original README for the template I'm using. While I'm at it, I'll throw in a few things you probably will have to install before using it
 

@@ -13,3 +13,8 @@ jobs:
           sudo apt-get install texlive-xetex biber fonts-goudybookletter texlive-fonts-extra  texlive-science-doc texlive-science fonts-adf-accanthis fonts-smc-gayathri
       - name: Generate pdf
         run: ./generate_cv.sh
+      - name: Publishes cv
+        uses: actions/upload-artifact@v2
+        with:
+          name: Fresh CV
+          path: cv.pdf
