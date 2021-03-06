@@ -50,7 +50,8 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+% \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage{unicode-math}
 
 \newfontfamily\bodyfont[]{Goudy Bookletter 1911}
 \newfontfamily\thinfont[]{GoudyBookletter1911Light}
