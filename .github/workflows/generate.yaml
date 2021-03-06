@@ -10,6 +10,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Installs tools
         run:
-          sudo apt-get install texlive-xetex biber fonts-goudybookletter texlive-fonts-extra texlive-math-extra fonts-adf-accanthis fonts-smc-gayathri
+          sudo apt-get install texlive-xetex biber fonts-goudybookletter texlive-fonts-extra  texlive-science-doc texlive-science fonts-adf-accanthis fonts-smc-gayathri
       - name: Generate pdf
         run: ./generate_cv.sh
