@@ -54,8 +54,8 @@
 \RequirePackage{unicode-math}
 
 \newfontfamily\bodyfont[]{Goudy Bookletter 1911}
-\newfontfamily\thinfont[]{GoudyBookletter1911Light}
-\newfontfamily\headingfont[]{GoudyBookletter1911Bold}
+\newfontfamily\thinfont[]{Gayathri}
+\newfontfamily\headingfont[]{AccanthisADFStd-Bold}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor]{Goudy Bookletter 1911}

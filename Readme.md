@@ -27,7 +27,11 @@ just writing
 will do the trick.
 
 ## About
-Latest version of my CV, typesetted in Helvetica and using colors inspired by Monokai (there is an `print` option which renders in black and white, and reverts the header to dark on light, if printing on paper is needed).
+
+Latest version of my CV, typesetted in Helvetica and using colors
+inspired by Monokai (there is an `print` option which renders in black
+and white, and reverts the header to dark on light, if printing on
+paper is needed).
 
 Uses TikZ for the header, XeTeX and fontspec to use Helvetica Neue, biblatex to print my publications and textpos for the aside.
 
@@ -35,7 +39,7 @@ Uses TikZ for the header, XeTeX and fontspec to use Helvetica Neue, biblatex to 
 ## License
 
 Copyright (C) 2012, Adrien Friggeri
-(c) 2014 JJ Merelo
+(c) 2014-2021 JJ Merelo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
