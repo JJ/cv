@@ -1,9 +1,11 @@
-name: "Generate CV"
+name: "Generate download URL"
 
 on:
-  push:
+  workflow_run:
+    workflows: ["Generate CV"]
     path: cv.tex
-
+    types: completed
+    
 jobs:
   generate-cv:
     runs-on: ubuntu-latest
