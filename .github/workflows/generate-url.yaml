@@ -3,9 +3,8 @@ name: "Generate download URL"
 on:
   workflow_run:
     workflows: ["Generate CV"]
-    path: cv.tex
     types: completed
-    
+
 jobs:
   generate-cv:
     runs-on: ubuntu-latest
