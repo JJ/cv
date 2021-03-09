@@ -14,4 +14,9 @@ my $runs = decode_json get( ACTIONS_URL );
 
 my $artifacts = decode_json get(  $runs->{'workflow_runs'}[0]{'artifacts_url'} );
 
-say $artifacts->{'artifacts'}[0]{'archive_download_url'};
+say <<EOC;
+# Download CV
+
+
+[Download zipped CV in PDF]($artifacts->{'artifacts'}[0]{'archive_download_url'};)
+EOD

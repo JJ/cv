@@ -12,5 +12,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Generate URL
-        run: .github/workflows/generate-download-url.pl
+        run: .github/workflows/generate-download-url.pl > DOWNLOAD.md
+      - name: Pushes changed file
+        env:
+          USER_NAME: JJCVBot
+          EMAIL: jjmerelo@gmail.com
+          MY_COMMIT_MSG: Updates download doc
+        run: curl https://raw.githubusercontent.com/JJ/perl-GitHub-Actions/main/bin/commit-push.pl | perl
 
