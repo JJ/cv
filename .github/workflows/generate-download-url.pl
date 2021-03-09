@@ -19,4 +19,4 @@ say <<EOC;
 
 
 [Download zipped CV in PDF]($artifacts->{'artifacts'}[0]{'archive_download_url'};)
-EOD
+EOC
