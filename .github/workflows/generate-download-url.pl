@@ -12,11 +12,14 @@ use constant ACTIONS_URL => 'https://api.github.com/repos/JJ/cv/actions/workflow
 
 my $runs = decode_json get( ACTIONS_URL );
 
+my $check_suite_id =  $runs->{'workflow_runs'}[0]{'check_suite_id'};
+
 my $artifacts = decode_json get(  $runs->{'workflow_runs'}[0]{'artifacts_url'} );
 
+my $artifact_id = $artifacts->{'artifacts'}[0]{'id'};
 say <<EOC;
 # Download CV
 
 
-[Download zipped CV in PDF]($artifacts->{'artifacts'}[0]{'archive_download_url'};)
+[Download zipped CV in PDF](https://github.com/JJ/cv/suites/$check_suite_id/artifacts/$artifact_id)
 EOC
