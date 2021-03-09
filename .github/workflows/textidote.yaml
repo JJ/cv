@@ -10,7 +10,7 @@ jobs:
               uses: ChiefGokhlayeh/textidote-action@v4
               id: lint
               with:
-                  root_file: main.tex
+                  root_file: cv.tex
 
                   ## Implied defaults:
                   # working_directory:
