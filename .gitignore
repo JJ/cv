@@ -19,3 +19,9 @@ cv-blx.bib
 *.pdf
 auto/
 *~
+*.dvi
+*.4*
+*.idv
+*.lg
+*.tmp
+*.xref
