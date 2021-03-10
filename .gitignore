@@ -25,3 +25,5 @@ auto/
 *.lg
 *.tmp
 *.xref
+cv*.png
+*.tpt
