@@ -24,6 +24,14 @@ jobs:
           exclude: '/boot /data /dev /mnt /proc /run /sys'
       - name: Generate pdf
         run: ./generate_cv.sh
+      - name: Generate thumbnail
+        run: thumbpdf cv.pdf && mv cv-0.png cv.png
+      - name: Pushes Thumbnail
+        env:
+          USER_NAME: JJCVBot
+          EMAIL: jjmerelo@gmail.com
+          MY_COMMIT_MSG: Updates thumbnail
+        run: curl https://raw.githubusercontent.com/JJ/perl-GitHub-Actions/main/bin/commit-push.pl | perl
       - name: Publishes cv
         uses: actions/upload-artifact@v2
         with:
