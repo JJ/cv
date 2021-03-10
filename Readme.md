@@ -1,6 +1,6 @@
 # JJ's short CV
 
-[![CV download page](cv.png)](DOWNLOAD.md)
+[![CV download page](cv.png)](DOWNLOAD)
 
 Below this is the original README for the template I'm using. While I'm at it, I'll throw in a few things you probably will have to install before using it
 
@@ -28,7 +28,7 @@ just writing
 
 will do the trick.
 
-## About
+## Oribinal "About"
 
 Latest version of my CV, typeset in Helvetica and using colors
 inspired by Monokai (there is an `print` option which renders in black
