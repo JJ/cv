@@ -15,7 +15,7 @@ jobs:
       - name: Generate pdf
         run: ./generate_cv.sh
       - name: Generate thumbnail
-        run: thumbpdf cv.pdf && mv cv-0.png cv.png
+        run: thumbpdf cv.pdf && ls *.png && mv cv-0.png cv.png
       - name: Pushes Thumbnail
         env:
           USER_NAME: JJCVBot
