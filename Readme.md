@@ -1,5 +1,7 @@
 # JJ's short CV
 
+[![CV download page](cv.png)](DOWNLOAD.md)
+
 Below this is the original README for the template I'm using. While I'm at it, I'll throw in a few things you probably will have to install before using it
 
 * This template uses XeLaTeX, not the standard LaTeX. So `sudo apt-get install texlive-xetex`
@@ -7,7 +9,7 @@ Below this is the original README for the template I'm using. While I'm at it, I
 * Default font has been changed to Goudy BookLetter 1911. You'll have
   to install it (`ttf-goudybookletter` package). I took out XITS Math but the fallback font was not
   instaled either, so you'll have to install it.
-* You will also have to install `texlive-fonts-extra`, `texlive-science` and `texlive-science-doc` 
+* You will also have to install `texlive-fonts-extra`, `texlive-science` and `texlive-science-doc`
 
 Sounds like hard work for a resumé, right? Well, you will have to do
 it only once and then you can use all the time you want. I haven't
