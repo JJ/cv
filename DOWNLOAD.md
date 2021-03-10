@@ -1,5 +1,5 @@
 # Download CV
 
 
-[Download zipped CV in PDF](https://github.com/JJ/cv/suites/2227139622/artifacts/46138676)
+[Download zipped CV in PDF](https://github.com/JJ/cv/suites/2227223806/artifacts/46141029)
 
