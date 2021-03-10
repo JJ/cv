@@ -17,7 +17,7 @@ jobs:
           key: ${{ runner.os }}-cache-latex
       - uses: airvzxf/cache-anything-new-action@v1.0.1
         with:
-          script: '.github/workflows/latex-install.sh'
+          script: './latex-install.sh'
           is_cached: ${{ steps.latex.outputs.cache-hit }}
           cache: ${{ runner.temp }}/latex
           snapshot: '/'
