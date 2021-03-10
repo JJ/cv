@@ -10,18 +10,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - uses: actions/cache@v2
-        id: latex
-        with:
-          path: ${{ runner.temp }}/latex
-          key: ${{ runner.os }}-cache-latex
-      - uses: airvzxf/cache-anything-new-action@v1.0.1
-        with:
-          script: './latex-install.sh'
-          is_cached: ${{ steps.latex.outputs.cache-hit }}
-          cache: ${{ runner.temp }}/latex
-          snapshot: '/'
-          exclude: '/boot /data /dev /mnt /proc /run /sys'
+      - name: Install tools
+        run: .github/workflows/latex-install.sh
       - name: Generate pdf
         run: ./generate_cv.sh
       - name: Generate thumbnail
