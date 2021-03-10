@@ -1,5 +1,5 @@
 Item, Group, Start Date, End Date
-Basic, Languages, 1983, 1990
-Pascal, Languages, 1988, 1993
-C, Languages, 1989, 1993
-Unix/Linux, OS, 1993,2021
+Basic, Languages, 1983-01-01, 1990-12-01
+Pascal, Languages, 1988-09-01, 1993-01-01
+C, Languages, 1989-01-01, 1993-12-01
+Unix/Linux, Environments, 1993-01-01,2021-03-12
