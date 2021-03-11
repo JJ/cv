@@ -19,16 +19,17 @@ jobs:
         run: ./generate_cv.sh
       - name: Go to main branch and generate thumbnail
         run: git status && git checkout master && thumbpdf --makepng --verbose --noclean cv.pdf && mv thb1.png cv.png
-      - name: Pushes thumbnail
-        env:
-          USER_NAME: JJCVBot
-          EMAIL: jjmerelo@gmail.com
-          MY_COMMIT_MSG: Updates thumbnail
-        run: curl https://raw.githubusercontent.com/JJ/perl-GitHub-Actions/main/bin/commit-push.pl | perl
       - name: Publishes CV
         uses: ncipollo/release-action@v1
         with:
           artifacts: "cv.pdf"
           body: Fresh CV generated
           token: ${{ secrets.GITHUB_TOKEN }}
-
+            - name: Generate URL
+        run: .github/workflows/generate-download-url.pl > DOWNLOAD.md
+      - name: Pushes thumbnail and URL file.
+        env:
+          USER_NAME: JJCVBot
+          EMAIL: jjmerelo@gmail.com
+          MY_COMMIT_MSG: Updates download doc
+        run: curl https://raw.githubusercontent.com/JJ/perl-GitHub-Actions/main/bin/commit-push.pl | perl
