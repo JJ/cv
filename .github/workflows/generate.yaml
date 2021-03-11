@@ -25,7 +25,7 @@ jobs:
           artifacts: "cv.pdf"
           body: Fresh CV generated
           token: ${{ secrets.GITHUB_TOKEN }}
-            - name: Generate URL
+      - name: Generate URL
         run: .github/workflows/generate-download-url.pl > DOWNLOAD.md
       - name: Pushes thumbnail and URL file.
         env:
