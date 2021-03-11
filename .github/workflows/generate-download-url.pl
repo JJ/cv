@@ -23,5 +23,5 @@ say <<EOC;
 # Download CV
 
 
-[Download zipped CV in PDF]($download_url)
+[Download latest version of CV in PDF]($download_url)
 EOC
