@@ -11,12 +11,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.push.head.ref }}
       - name: Install tools
         run: .github/workflows/latex-install.sh
       - name: Generate pdf
         run: ./generate_cv.sh
       - name: Go to main branch and generate thumbnail
-        run: git status && thumbpdf --makepng --verbose --noclean cv.pdf && mv thb1.png cv.png
+        run: git status && git checkout master && thumbpdf --makepng --verbose --noclean cv.pdf && mv thb1.png cv.png
       - name: Pushes thumbnail
         env:
           USER_NAME: JJCVBot
