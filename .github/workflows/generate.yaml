@@ -15,15 +15,15 @@ jobs:
         run: .github/workflows/latex-install.sh
       - name: Generate pdf
         run: ./generate_cv.sh
-      - name: Generate thumbnail
-        run: thumbpdf --makepng --verbose --noclean cv.pdf && mv thb1.png cv.png
-      - name: Pushes Thumbnail
+      - name: Go to main branch and generate thumbnail
+        run: git checkout master && thumbpdf --makepng --verbose --noclean cv.pdf && mv thb1.png cv.png
+      - name: Pushes thumbnail
         env:
           USER_NAME: JJCVBot
           EMAIL: jjmerelo@gmail.com
           MY_COMMIT_MSG: Updates thumbnail
         run: curl https://raw.githubusercontent.com/JJ/perl-GitHub-Actions/main/bin/commit-push.pl | perl
-      - name: Publishes cv
+      - name: Publishes CV
         uses: ncipollo/release-action@v1
         with:
           artifacts: "cv.pdf"
