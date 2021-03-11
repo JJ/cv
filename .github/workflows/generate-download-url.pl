@@ -2,23 +2,18 @@
 
 use strict;
 use warnings;
-
-use JSON::PP;
-use LWP::Simple;
-
-use v5.14; # For say
-
-use constant ACTIONS_URL => 'https://api.github.com/repos/JJ/cv/actions/workflows/generate.yaml/runs';
 use constant URL_FILE => "download_cv_url.txt";
 
-my $runs = decode_json get( ACTIONS_URL );
+use Git;
 
-my $check_suite_id =  $runs->{'workflow_runs'}[0]{'check_suite_id'};
+use v5.14; # For say
+my $repo = Git->repository (Directory => '.');
+my @tags = $repo->command("tag");
 
-my $artifacts = decode_json get(  $runs->{'workflow_runs'}[0]{'artifacts_url'} );
+my $tag = pop @tags;
 
-my $artifact_id = $artifacts->{'artifacts'}[0]{'id'};
-my $download_url = "https://github.com/JJ/cv/suites/$check_suite_id/artifacts/$artifact_id";
+
+my $download_url = "https://github.com/JJ/cv/releases/download/$tag/cv.pdf";
 
 open my $url_file, ">", URL_FILE;
 print $url_file $download_url;
