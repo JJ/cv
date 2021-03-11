@@ -2,7 +2,8 @@ name: "Generate CV"
 
 on:
   push:
-    path: cv.tex
+    tags:
+      - '*'
 
 jobs:
   generate-cv:
@@ -23,7 +24,9 @@ jobs:
           MY_COMMIT_MSG: Updates thumbnail
         run: curl https://raw.githubusercontent.com/JJ/perl-GitHub-Actions/main/bin/commit-push.pl | perl
       - name: Publishes cv
-        uses: actions/upload-artifact@v2
+        uses: ncipollo/release-action@v1
         with:
-          name: Fresh CV
-          path: cv.pdf
+          artifacts: "cv.pdf"
+          body: Fresh CV generated
+          token: ${{ secrets.GITHUB_TOKEN }}
+
