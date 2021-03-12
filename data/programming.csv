@@ -2,4 +2,15 @@ Item, Group, Start Date, End Date
 Basic, Languages, 1983-01-01, 1990-12-01
 Pascal, Languages, 1988-09-01, 1993-01-01
 C, Languages, 1989-01-01, 1993-12-01
+C++, Languages, 1994-01-01, 2001-12-01
+Perl, Languages, 1994-07-22, 2021-03-12
+JavaScript, Languages, 1997-07-01, 2021-03-12
+Raku, Languages, 2016-12-06,2021-03-12
+Python, Languages, 1994-09-30,2021-03-12
 Unix/Linux, Environments, 1993-01-01,2021-03-12
+Web, Environments, 1994-08-01,2021-03-12
+Cloud, Environments, 2015-09-01,2021-03-12
+Relational Databases, Tools, 1999-12-01, 2021-03-12
+Docker, Tools, 2015-09-03, 2021-03-12
+Travis-CI, Tools, 2015-08-01, 2021-03-12
+Github Actions, Tools, 2019-08-15, 2021-03-12
