@@ -12,5 +12,8 @@ g.d$data[[4]]$angle <- 90
 
 rebuilt <- ggplot_gtable(g.d)
 
+png(filename="timeline.png", width=240, height=960)
 plot(rebuilt)
+> dev.off()
+
 
