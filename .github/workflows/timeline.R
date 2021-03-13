@@ -2,7 +2,6 @@ library("vistime")
 
 data <- read.csv("data/programming.csv")
 
-
 g <- gg_vistime(data, col.event="Item", col.start="Start.Date", col.end="End.Date", col.group="Group") + theme(axis.text.x = element_text(angle=90, color='blue4',size=14) )+coord_flip()
 
 g.d <- ggplot_build(g)
