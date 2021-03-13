@@ -1,5 +1,4 @@
 library("vistime")
-library("plotly")
 
 data <- read.csv("data/programming.csv")
 

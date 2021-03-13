@@ -5,7 +5,7 @@ on:
       - 'data/*.csv'
 
 jobs:
-  crea-grafico:
+  creates-timeline:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -16,7 +16,7 @@ jobs:
           r-version: '3.5.3' # The R version to download (if necessary) and use.
       - name: Install dependencies
         run: |
-          install.packages(c("ggplot2","vistime", "plotly"))
+          install.packages(c("ggplot2", "httr", "plotly", "vistime"))
         shell: Rscript {0}
       - name: Ejecuta el script
         run: Rscript .github/workflows/timeline.R
