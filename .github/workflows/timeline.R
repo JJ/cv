@@ -1,4 +1,5 @@
 library("vistime")
+library("ggplot2")
 
 data <- read.csv("data/programming.csv")
 
