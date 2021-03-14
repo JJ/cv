@@ -9,8 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     container: jjmerelo/cv
     steps:
-      - name: Installs git
-        run: apt-get install -y git
       - name: Checkout
         uses: actions/checkout@v2
       - name: Ejecuta el script
