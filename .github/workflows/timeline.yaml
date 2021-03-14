@@ -16,8 +16,9 @@ jobs:
       - name: Ejecuta el script
         run: Rscript .github/workflows/timeline.R
       - name: Checks in results
+        shell: bash {0}
         run: |
-          if [ `git status -s` ]; then
+          if [[ $(git status -s) ]]; then
               git config --global user.email "jjmerelo@gmail.com"
               git config --global user.name "CVDataBot"
               git commit -am "Update timelin chart"
