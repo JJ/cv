@@ -8,7 +8,7 @@ use Git;
 
 use v5.14; # For say
 my $repo = Git->repository (Directory => '.');
-my @tags = $repo->command("tag");
+my @tags = $repo->command("tag","-l", "--sort=v:refname");
 
 my $tag = pop @tags;
 
