@@ -19,7 +19,7 @@ jobs:
           if [[ $(git status -s) ]]; then
               git config --global user.email "jjmerelo@gmail.com"
               git config --global user.name "CVDataBot"
-              git commit -am "Update timelin chart"
+              git commit -am "Update timeline chart"
               git push
           else
               echo "🟏 No Changes"
