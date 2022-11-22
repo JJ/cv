@@ -15,8 +15,9 @@ Testing, Tools, 2002-07-01,2022-12-31
 Relational Databases, Tools, 1999-12-01, 2021-12-31
 NoSQL Databases, Tools, 2015-03-01, 2021-12-31
 Docker, Tools, 2015-09-03, 2022-12-31
-Travis-CI, Tools, 2013-05-27, 2022-12-31
+CI Tools, Tools, 2013-05-27, 2022-12-31
 Github actions, Tools, 2019-08-16, 2022-12-31
 Rust, Languages, 2022-02-01, 2022-12-31
 Kotlin, Languages, 2021-09-01, 2022-12-31
 Swift, Languages, 2021-09-01, 2022-12-31
+Golang, Languages, 2020-01-01, 2022-12-31
