@@ -3,21 +3,22 @@ Basic, Languages, 1983-12-25, 1990-12-01
 Pascal, Languages, 1988-09-01, 1993-01-01
 C, Languages, 1989-01-01, 1993-12-01
 C++, Languages, 1994-01-01, 2001-12-01
-Perl, Languages, 1994-07-22, 2022-12-31
-JavaScript, Languages, 1997-07-01, 2022-12-31
-Raku, Languages, 2016-12-04,2022-12-31
-Python, Languages, 1994-09-30,2022-12-31
-R, Languages, 2012-11-17, 2022-12-31
-Unix/Linux, Environments, 1993-01-01,2022-12-31
-WWW, Environments, 1994-08-10,2022-12-31
-Cloud, Environments, 2015-08-15,2022-12-31
-Testing, Tools, 2002-07-01,2022-12-31
+Perl, Languages, 1994-07-22, 2023-06-01
+JavaScript, Languages, 1997-07-01, 2023-06-01
+TypeScript, Languages, 2021-05-01,2023-06-01
+Raku, Languages, 2016-12-04,2023-06-01
+Python, Languages, 1994-09-30,2023-06-01
+R, Languages, 2012-11-17, 2023-06-01
+Unix/Linux, Environments, 1993-01-01,2023-06-01
+WWW, Environments, 1994-08-10,2023-06-01
+Cloud, Environments, 2015-08-15,2023-06-01
+Testing, Tools, 2002-07-01,2023-06-01
 Relational Databases, Tools, 1999-12-01, 2021-12-31
 NoSQL Databases, Tools, 2015-03-01, 2021-12-31
-Docker, Tools, 2015-09-03, 2022-12-31
-CI Tools, Tools, 2013-05-27, 2022-12-31
-Github actions, Tools, 2019-08-16, 2022-12-31
-Rust, Languages, 2022-02-01, 2022-12-31
-Kotlin, Languages, 2021-09-01, 2022-12-31
-Swift, Languages, 2021-09-01, 2022-12-31
-Golang, Languages, 2020-01-01, 2022-12-31
+Docker, Tools, 2015-09-03, 2023-06-01
+CI Tools, Tools, 2013-05-27, 2023-06-01
+Github actions, Tools, 2019-08-16, 2023-06-01
+Rust, Languages, 2022-02-01, 2023-06-01
+Kotlin, Languages, 2021-09-01, 2023-06-01
+Swift, Languages, 2021-09-01, 2023-06-01
+Golang, Languages, 2020-01-01, 2023-06-01
