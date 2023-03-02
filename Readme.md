@@ -2,7 +2,8 @@
 
 [![CV download page](cv.png)](DOWNLOAD)
 
-Below this is the original README for the template I'm using. While I'm at it, I'll throw in a few things you probably will have to install before using it
+Below this is the original README for the template I'm using. While I'm at it,
+I'll throw in a few things you probably will have to install before using it
 
 * This template uses XeLaTeX, not the standard LaTeX. So `sudo apt-get install texlive-xetex`
 * Besides, XeLaTeX seems to use `biber`, not BibTeX. So `sudo apt-get install biber`
@@ -15,20 +16,26 @@ Sounds like hard work for a resumé, right? Well, you will have to do
 it only once and then you can use all the time you want. I haven't
 managed to make it work for older versions of Ubuntu, though.
 
+Tools and scripts developed to maintain this resumè are summarized in these two
+articles:
+
+* [How to totally over-engineer your
+  CV](https://dev.to/jj/how-to-totally-over-engineer-your-cv-in-a-few-easy-steps-6ha)
+* [Part deux of the same
+  article](https://dev.to/jj/how-to-totally-over-engineer-your-cv-part-two-1oip).
+
 ## Generate PDF
 
 	xelatex cv.tex
 	biber cv
 	xelatex cv.tex
 
-That's it. This is conveniently encapsulated in `generate_cv.sh` so
-just writing
+That's it. This is conveniently encapsulated in the `Makefile`, so `make` will do the trick.
 
-	./generate_cv.sh
+## Original "About"
 
-will do the trick.
-
-## Oribinal "About"
+As found in [the
+template](https://www.overleaf.com/latex/templates/friggeri-cv-template/hmnchbfmjgqh)
 
 Latest version of my CV, typeset in Helvetica and using colors
 inspired by Monokai (there is an `print` option which renders in black
