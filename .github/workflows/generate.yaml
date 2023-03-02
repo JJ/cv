@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: Install tools
         run: .github/workflows/latex-install.sh
       - name: Generate pdf
-        run: ./generate_cv.sh
+        run: make
       - name: Go to main branch and generate thumbnail
         run: git status && git checkout master && thumbpdf --makepng --verbose --noclean cv.pdf && mv thb1.png cv.png
       - name: Publishes CV
