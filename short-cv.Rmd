@@ -31,6 +31,10 @@ He is currently teaching a Cloud Computing class in the Computer Science degree,
 
 ## Research
 
+His main interests are evolutionary algorithms, neural networks (the topic of his PhD), complex networks (including social networks), digital humanities and parallel, ephemeral and social computing, always from the perspective of open science. Since 2005, most of his papers are written openly using GitHub, where data and code used to process it and generate tables and graphics can also be downloaded and reused with a free license.
+
+Currently, his Google Scholar profile includes `r length(myPapers$title)` papers, with a total of `r myProfile$total_cites` citations, and an `h` number of `r myProfile$h_index`.
+
 ## Programming
 
 JJ's experience in programming goes back to 1983; he has not stopped being an
