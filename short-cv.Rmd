@@ -1,6 +1,6 @@
 ---
 title: "Short CV"
-author: "JJ Merelo"
+author: "JJ Merelo, `jmerelo@ugr.es`"
 date: "`r Sys.Date()`"
 output: word_document
 abstract: |
@@ -8,6 +8,8 @@ abstract: |
   Computer Engineering, Automatics and Robotics department. He graduated in
   Physics at the same university in 1988, obtaining a PhD in Physics in 1994,
   again from the same university.
+  
+  [Google Scholar Profile](https://scholar.google.com/citations?hl=es&user=gFxqc64AAAAJ)
 bibliography: bibliography.bib
 ---
 
@@ -21,6 +23,14 @@ myPapers <- get_publications(myId)
 
 ## Teaching
 
+JJ Merelo started teaching in 1988, and has been teaching ever since, mainly in Computer Science degrees, also in Telecommunications and other degrees, continuing education courses, as well as industry courses. He taught a course on MLOps at NOVA university in Lisbon in summer 2022, his last outside normal university degrees.
+
+He has participated as keynote speaker in JENUI, the Spanish conference for Computer Science professors. He has also participated in internal formation courses, mainly related to new technologies applied to teaching, open source software and open culture.
+
+His teaching innovation activities include using free software for teaching, as well as the application of chatbots and learning analytics to teaching [@guervos2004weblogging,@chatbots].
+
+He is currently teaching a Cloud Computing class in the Computer Science degree, and using very extensively GitHub to deliver value to students and enhance their programming skills.
+
 ## Research
 
 ## Programming
@@ -29,3 +39,5 @@ JJ's experience in programming goes back to 1983; he has not stopped being an
 active software developer since then. He is mainly proficient in Perl, Raku and
 JavaScript in any of its forms. Can use effectively R and Python, as well as
 other languages like Go.
+
+## References
