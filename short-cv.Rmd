@@ -1,6 +1,6 @@
 ---
 title: "Short CV"
-author: "JJ Merelo, `jmerelo@ugr.es`"
+author: "JJ Merelo, `jmerelo@ugr.es`, [Google Scholar Profile](https://scholar.google.com/citations?hl=es&user=gFxqc64AAAAJ)"
 date: "`r Sys.Date()`"
 output: word_document
 abstract: |
@@ -8,8 +8,6 @@ abstract: |
   Computer Engineering, Automatics and Robotics department. He graduated in
   Physics at the same university in 1988, obtaining a PhD in Physics in 1994,
   again from the same university.
-  
-  [Google Scholar Profile](https://scholar.google.com/citations?hl=es&user=gFxqc64AAAAJ)
 bibliography: bibliography.bib
 ---
 
