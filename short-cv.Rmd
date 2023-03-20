@@ -35,6 +35,11 @@ His main interests are evolutionary algorithms, neural networks (the topic of hi
 
 Currently, his Google Scholar profile includes `r length(myPapers$title)` papers, with a total of `r myProfile$total_cites` citations, and an `h` number of `r myProfile$h_index`.
 
+Papers are developed openly in a GitHub repository, with a free license. Some highlights on different topics include:
+
+* [@histories3010003], a digital humanities paper, with data and code available from [its GitHub repository](https://github.com/JJ/dogesr). It uses data included in the open source R package [`dogesr`](https://cloud.r-project.org/web/packages/dogesr/index.html).
+* [@garcíaortega2021tropes], which analyzes the TvTropes.org website looking for patterns in movie tropes, is also listed in [PapersWithCode](https://cs.paperswithcode.com/paper/tropes-in-films-an-initial-analysis-1), pointing to the repository where it was developed and where data is hosted.
+
 ## Programming
 
 JJ's experience in programming goes back to 1983; he has not stopped being an
