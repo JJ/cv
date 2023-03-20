@@ -2,22 +2,20 @@
 title: "Short CV"
 author: "JJ Merelo"
 date: "`r Sys.Date()`"
-output:
-  pdf_document:
-    keep_tex: true
-bibliography: bibliography.bib
+output: word_document
 abstract: |
   JJ Merelo is a professor at the University of Granada, currently attached to the
   Computer Engineering, Automatics and Robotics department. He graduated in
   Physics at the same university in 1988, obtaining a PhD in Physics in 1994,
   again from the same university.
-
+bibliography: bibliography.bib
 ---
 
-```{r setup}
+```{r setup,echo=FALSE,message=FALSE}
 require(scholar)
 myId <- 'gFxqc64AAAAJ'
 myProfile <- get_profile(myId)
+myPapers <- get_publications(myId)
 ```
 
 
