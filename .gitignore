@@ -27,3 +27,4 @@ auto/
 *.xref
 cv*.png
 *.tpt
+.Rproj.user
