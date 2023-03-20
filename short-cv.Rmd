@@ -1,0 +1,20 @@
+---
+title: "Short CV"
+author: "JJ Merelo"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    keep_tex: true
+bibliography: bibliography.bib
+abstract: |
+JJ Merelo is a professor at the University of Granada, currently attached to the
+Computer Engineering, Automatics and Robotics department. He graduated in
+Physics at the same university in 1988, obtaining a PhD in Physics in 1994,
+again from the same university.
+
+---
+
+JJ's experience in programming goes back to 1983; he has not stopped being an
+active software developer since then. He is mainly proficient in Perl, Raku and
+JavaScript in any of its forms. Can use effectively R and Python, as well as
+other languages like Go.
