@@ -28,3 +28,6 @@ auto/
 cv*.png
 *.tpt
 .Rproj.user
+*.tex
+*.docx
+*.RProj
