@@ -17,6 +17,9 @@ jobs:
       - uses: r-lib/actions/setup-pandoc@v2
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          needs: knitr rmarkdown scholar
+          needs: |
+            knitr
+            rmarkdown
+            scholar
       - name: Generate file
         run: bin/rmd-render.R academic-cv-summary.Rmd
