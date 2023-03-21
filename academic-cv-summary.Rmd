@@ -1,0 +1,27 @@
+---
+title: "Research publication summary"
+author: "JJ Merelo, `jmerelo@ugr.es`, [Google Scholar Profile](https://scholar.google.com/citations?hl=es&user=gFxqc64AAAAJ)"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+abstract: |
+  (Mostly) Automatically generated summary of the academic/publishing curriculum.
+bibliography: bibliography.bib
+---
+
+```{r setup,echo=FALSE,message=FALSE}
+require(scholar)
+myId <- 'gFxqc64AAAAJ'
+myProfile <- get_profile(myId)
+myPapers <- get_publications(myId)
+
+library(dplyr)
+```
+
+His main interests are evolutionary algorithms, neural networks (the topic of his PhD), complex networks (including social networks), digital humanities and parallel, ephemeral and social computing, always from the perspective of open science. Since 2005, most of his papers are written openly using GitHub, where data and code used to process it and generate tables and graphics can also be downloaded and reused with a free license.
+
+Currently, his Google Scholar profile includes `r length(myPapers$title)` papers, with a total of `r myProfile$total_cites` citations, and an `h` number of `r myProfile$h_index`.
+
+The paper with the most cites is `r myPapers$title[1]`
+
+## References
