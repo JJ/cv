@@ -1,4 +1,4 @@
-# JJ's short CV
+# JJ's short CV [![Generate academic CV](https://github.com/JJ/cv/actions/workflows/R-stuff.yml/badge.svg)](https://github.com/JJ/cv/actions/workflows/R-stuff.yml)
 
 [![CV download page](cv.png)](DOWNLOAD)
 

@@ -27,7 +27,8 @@ The paper with the most cites is `r myPapers$title[1]` [@jjproteng], with `r myP
 history <- get_citation_history(myId)
 library(ggplot2)
 library(ggthemes)
-ggplot(history, aes(x=year,y=cites))+ geom_line()+ geom_point()+theme_tufte()
+last_year <- tail(history,n=2)
+ggplot(history, aes(x=year,y=cites))+ geom_line()+ geom_point()+geom_line(data=last_year, aes(x=year,y=cites,color="Year so far"))+geom_point(data=last_year, aes(x=year,y=cites,color="Year so far"))+theme_tufte()
 ```
 
 ## References
