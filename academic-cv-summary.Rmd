@@ -21,6 +21,6 @@ His main interests are evolutionary algorithms, neural networks (the topic of hi
 
 Currently, his Google Scholar profile includes `r length(myPapers$title)` papers, with a total of `r myProfile$total_cites` citations, and an `h` number of `r myProfile$h_index`. The number of publications, which includes book chapters, is `r length(myPapers$year)`
 
-The paper with the most cites is `r myPapers$title[1]` [@jjproteng]
+The paper with the most cites is `r myPapers$title[1]` [@jjproteng], with `r myPapers$cites[1]` cites.
 
 ## References

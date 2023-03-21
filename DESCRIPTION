@@ -1,0 +1,20 @@
+Package: jjcvr
+Type: Package
+Title: Generate JJ CV
+Version: 0.2.0
+Author: Juan Julián Merelo-Guervós
+Maintainer: Juan Julián Merelo-Guervós <jjmerelo@gmail.com>
+Description: ObFile needed to generate dependencies
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 3.5.0)
+Config/testthat/edition: 3
+Imports:
+    dplyr,
+    ggplot2,
+    knitr,
+    scholar,
+    rmarkdown
+
