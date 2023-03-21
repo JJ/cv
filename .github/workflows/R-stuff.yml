@@ -24,3 +24,9 @@ jobs:
             scholar
       - name: Generate file
         run: bin/rmd-render.R academic-cv-summary.Rmd
+            - name: Publishes CV
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "academic-cv-summary.pdf"
+          body: Fresh CV generated
+          token: ${{ secrets.GITHUB_TOKEN }}
