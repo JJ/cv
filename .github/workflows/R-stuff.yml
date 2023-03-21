@@ -20,7 +20,7 @@ jobs:
           cache-version: 2
       - name: Generate file
         run: bin/rmd-render.R academic-cv-summary.Rmd
-            - name: Publishes CV
+      - name: Publishes CV
         uses: ncipollo/release-action@v1
         with:
           artifacts: "academic-cv-summary.pdf"
