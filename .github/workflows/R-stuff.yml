@@ -5,7 +5,8 @@ on:
     paths:
       - '*.Rmd'
       - .github/workflows/R-stuff.yml
-      
+  schedule:
+    - cron:  '1 1 1,15 * *'
 jobs:
   generate-academic-cv:
     runs-on: ubuntu-latest
