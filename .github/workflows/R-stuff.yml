@@ -3,7 +3,7 @@ name: "Check and test package"
 on:
   push:
     paths:
-      - *.Rmd
+      - '*.Rmd'
 
 jobs:
   run-checks:
