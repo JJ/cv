@@ -4,7 +4,8 @@ on:
   push:
     paths:
       - '*.Rmd'
-
+      - .github/workflows/R-stuff.yml
+      
 jobs:
   run-checks:
     runs-on: ubuntu-latest
@@ -18,6 +19,8 @@ jobs:
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           cache-version: 2
+      - name: Install latex
+        run: sudo apt-get install -y texlive-latex-base
       - name: Generate file
         run: bin/rmd-render.R academic-cv-summary.Rmd
       - name: Publishes CV
