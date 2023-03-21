@@ -20,7 +20,7 @@ jobs:
         with:
           cache-version: 2
       - name: Install latex
-        run: sudo apt-get install -y texlive-latex-base
+        run: sudo apt-get install -y texlive-latex-recommend
       - name: Generate file
         run: bin/rmd-render.R academic-cv-summary.Rmd
 
