@@ -27,4 +27,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: academic-cv
-          path: academic-cv-summary.pdf
+          path: text/academic-cv-summary.pdf

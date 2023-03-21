@@ -23,4 +23,11 @@ Currently, his Google Scholar profile includes `r length(myPapers$title)` papers
 
 The paper with the most cites is `r myPapers$title[1]` [@jjproteng], with `r myPapers$cites[1]` cites.
 
+```{r citation,echo=FALSE,message=FALSE}
+history <- get_citation_history(myId)
+library(ggplot2)
+library(ggthemes)
+ggplot(history, aes(x=year,y=cites))+ geom_line()+ geom_point()+theme_tufte()
+```
+
 ## References
