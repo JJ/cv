@@ -1,4 +1,4 @@
-name: "Check and test package"
+name: "Generate academic CV"
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
       - .github/workflows/R-stuff.yml
       
 jobs:
-  run-checks:
+  generate-academic-cv:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,9 +23,8 @@ jobs:
         run: sudo apt-get install -y texlive-latex-base
       - name: Generate file
         run: bin/rmd-render.R academic-cv-summary.Rmd
-      - name: Publishes CV
-        uses: ncipollo/release-action@v1
+
+      - uses: actions/upload-artifact@v3
         with:
-          artifacts: "academic-cv-summary.pdf"
-          body: Fresh CV generated
-          token: ${{ secrets.GITHUB_TOKEN }}
+          name: academic-cv
+          path: academic-cv-summary.pdf
