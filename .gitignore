@@ -30,3 +30,4 @@ cv*.png
 *.tex
 *.docx
 *.Rproj
+.Rbuildignore
