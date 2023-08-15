@@ -17,11 +17,11 @@ myPapers <- get_publications(myId)
 
 ```
 
-His main interests are evolutionary algorithms, neural networks (the topic of his PhD), complex networks (including social networks), digital humanities and parallel, ephemeral and social computing, always from the perspective of open science. Since (circa) 2005, most of his papers are written openly using GitHub, where data and code used to process it and generate tables and graphics can also be downloaded and reused with a free license.
+His main interests are evolutionary algorithms, neural networks (the topic of his PhD), complex networks (including social networks), digital humanities and parallel, ephemeral and social computing, always from the perspective of open science. Since (circa) 2005, most of his papers are written openly using GitHub, where data and code used to process it and to generate tables and graphics can also be downloaded and reused with a free license.
 
 Currently, his Google Scholar profile includes `r length(myPapers$title)` items, including papers, reports and book chapters, with a total of `r myProfile$total_cites` citations, and an `h` number of `r myProfile$h_index`.
 
-The paper with the most cites is *`r myPapers$title[1]`* [@jjproteng], with `r myPapers$cites[1]` cites. Evolution of paper citations in history is shown below.
+The paper with the most cites is *`r myPapers$title[1]`* [@jjproteng], with `r myPapers$cites[1]` cites. Evolution of paper citations is shown below.
 
 ```{r citation,echo=FALSE,message=FALSE}
 history <- get_citation_history(myId)
