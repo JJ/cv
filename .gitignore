@@ -31,3 +31,4 @@ cv*.png
 *.docx
 *.Rproj
 .Rbuildignore
+cv-blx.bib
