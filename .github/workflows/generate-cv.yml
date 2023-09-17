@@ -4,9 +4,10 @@ on:
   push:
     paths:
       - '*.Rmd'
-      - .github/workflows/R-stuff.yml
+      - .github/workflows/generate-cv.yml
   schedule:
     - cron:  '1 1 1,15 * *'
+
 jobs:
   generate-academic-cv:
     runs-on: ubuntu-latest
