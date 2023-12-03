@@ -30,13 +30,13 @@ library(ggthemes)
 last_year <- tail(history,n=2)
 ggplot(history, aes(x=year,y=cites))+ geom_line()+ geom_point()+geom_line(data=last_year, aes(x=year,y=cites,color="Year so far"))+geom_point(data=last_year, aes(x=year,y=cites,color="Year so far"))+theme_tufte()
 ```
-In the last 5 years, these have been the papers with the most citations
+In the last 6 years, these have been the papers with the most citations
 
 ```{r last5,,echo=FALSE,message=FALSE}
 library(dplyr)
 thisYear <- as.integer(format(Sys.Date(), "%Y"))
-papers.last5 <- myPapers[ between(myPapers$year,thisYear-5,thisYear), ]
-mostCitations <- head(papers.last5[order(papers.last5$cites, decreasing = T),],5)
+papers.last5 <- myPapers[ between(myPapers$year,thisYear-6,thisYear), ]
+mostCitations <- head(papers.last5[order(papers.last5$cites, decreasing = T),],10)
 knitr::kable(mostCitations %>% select(title,cites,year), row.names = F)
 ```
 
