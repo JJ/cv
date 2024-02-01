@@ -21,7 +21,7 @@ His main interests are evolutionary algorithms, neural networks (the topic of hi
 
 Currently, his Google Scholar profile includes `r length(myPapers$title)` items, including papers, reports and book chapters, with a total of `r myProfile$total_cites` citations, and an `h` number of `r myProfile$h_index`.
 
-There are *`r length(myPapers[ !is.na(myPapers$year) &  myPapers$year == thisYear,]$title)`* papers published this year. The paper with the most cites is *`r myPapers$title[1]`* [@jjproteng], with `r myPapers$cites[1]` cites. Evolution of paper citations is shown below.
+There are *`r length(myPapers[ !is.na(myPapers$year) &  myPapers$year == thisYear,]$title)`* papers published this year. The paper with the most cites is *`r myPapers$title[1]`* [@jjproteng], with `r myPapers$cites[1]` cites. Evolution of paper citations per year is shown below.
 
 ```{r citation,echo=FALSE,message=FALSE}
 history <- get_citation_history(myId)
@@ -30,11 +30,11 @@ library(ggthemes)
 last_year <- tail(history,n=2)
 ggplot(history, aes(x=year,y=cites))+ geom_line()+ geom_point()+geom_line(data=last_year, aes(x=year,y=cites,color="Year so far"))+geom_point(data=last_year, aes(x=year,y=cites,color="Year so far"))+theme_tufte()
 ```
-In the last 6 years, these have been the papers with the most citations
+In the last 5 years, these have been the papers with the most citations
 
 ```{r last5,,echo=FALSE,message=FALSE}
 library(dplyr)
-papers.last5 <- myPapers[ between(myPapers$year,thisYear-6,thisYear), ]
+papers.last5 <- myPapers[ between(myPapers$year,thisYear-5,thisYear), ]
 mostCitations <- head(papers.last5[order(papers.last5$cites, decreasing = T),],10)
 knitr::kable(mostCitations %>% select(title,cites,year), row.names = F)
 ```
@@ -42,7 +42,7 @@ knitr::kable(mostCitations %>% select(title,cites,year), row.names = F)
 This last year there are some papers with a non-null number of citations:
 
 ```{r thisYear,echo=FALSE,message=FALSE}
-papers.thisyear <- myPapers[ !is.na(myPapers$year) &  myPapers$year == thisYear & myPapers$cites > 0 & !is.na(myPapers$title), ]
+papers.thisyear <- myPapers[ !is.na(myPapers$year) &  myPapers$year == (thisYear-1) & myPapers$cites > 0 & !is.na(myPapers$title), ]
 knitr::kable(papers.thisyear %>% select(title,cites), row.names = F)
 ```
 
