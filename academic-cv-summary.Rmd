@@ -1,6 +1,6 @@
 ---
 title: "Research publication summary"
-author: "JJ Merelo, `jmerelo@ugr.es`, [Google Scholar Profile](https://scholar.google.com/citations?hl=es&user=gFxqc64AAAAJ)"
+author: "JJ Merelo, `jmerelo@ugr.es`"
 date: "`r Sys.Date()`"
 output:
   pdf_document: default
@@ -16,6 +16,7 @@ myProfile <- get_profile(myId)
 myPapers <- get_publications(myId)
 thisYear <- as.integer(format(Sys.Date(), "%Y"))
 ```
+[Google Scholar Profile](https://scholar.google.com/citations?hl=es&user=gFxqc64AAAAJ)
 
 His main interests are evolutionary algorithms (especially combined with green computing), neural networks (the topic of his PhD), complex networks (including social networks), digital humanities and parallel, ephemeral and social computing, always from the perspective of open science. Since (circa) 2005, most of his papers are written openly using GitHub, where data and code used to process it and to generate tables and graphics can also be downloaded and reused with a free license.
 
