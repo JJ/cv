@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 output:
   pdf_document: default
 abstract: |
-  (Mostly) Automatically generated summary of the academic curriculum.
+  (Mostly) Automatically generated summary of the academic curriculum of JJ Merelo.
 bibliography: bibliography.bib
 ---
 
