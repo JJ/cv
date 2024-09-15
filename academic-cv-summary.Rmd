@@ -22,7 +22,9 @@ Currently professor at the University of Granada, his main interests are evoluti
 
 Currently, his Google Scholar profile includes `r length(myPapers$title)` items, including papers, reports and book chapters, with a total of `r myProfile$total_cites` citations, and an `h` number of `r myProfile$h_index`.
 
-There are *`r length(myPapers[ !is.na(myPapers$year) &  myPapers$year == thisYear,]$title)`* papers published this year. The paper with the most cites is *`r myPapers$title[1]`* [@jjproteng], with `r myPapers$cites[1]` cites. Evolution of paper citations per year is shown below.
+So far, there have been *`r length(myPapers[ !is.na(myPapers$year) & myPapers$year == thisYear,]$title)`* papers published this year.
+
+The paper with the most cites is *`r myPapers$title[1]`* [@jjproteng], with `r myPapers$cites[1]` cites. Evolution of paper citations per year is shown below.
 
 ```{r citation,echo=FALSE,message=FALSE}
 history <- get_citation_history(myId)
@@ -40,7 +42,7 @@ mostCitations <- head(papers.last5[order(papers.last5$cites, decreasing = T),],1
 knitr::kable(mostCitations %>% select(title,cites,year), row.names = F)
 ```
 
-This last year there are some papers with a non-null number of citations:
+From last year up to now there are some papers with a non-null number of citations:
 
 ```{r thisYear,echo=FALSE,message=FALSE}
 papers.thisyear <- myPapers[ !is.na(myPapers$year) &  myPapers$year == (thisYear-1) & myPapers$cites > 0 & !is.na(myPapers$title), ]
