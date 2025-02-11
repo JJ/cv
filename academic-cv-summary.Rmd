@@ -18,7 +18,7 @@ thisYear <- as.integer(format(Sys.Date(), "%Y"))
 ```
 [Google Scholar Profile](https://scholar.google.com/citations?hl=es&user=gFxqc64AAAAJ)
 
-Currently professor at the University of Granada, his main interests are evolutionary algorithms (especially combined with green computing), neural networks (the topic of his PhD), complex networks (including social networks), digital humanities and parallel, ephemeral and social computing, always from the perspective of open science. Since (circa) 2005, most of his papers are written openly using GitHub, where data and code used to process it and to generate tables and graphics can also be downloaded and reused with a free license.
+Currently professor at the University of Granada as well as student in Art History, his main interests are evolutionary algorithms (especially combined with green computing), neural networks (the topic of his PhD), complex networks (including social networks), digital humanities and parallel, ephemeral and social computing, always from the perspective of open science. Since (circa) 2005, most of his papers are written openly using GitHub, where data and code used to process it and to generate tables and graphics can also be downloaded and reused with a free license.
 
 Currently, his Google Scholar profile includes `r length(myPapers$title)` items, including papers, reports and book chapters, with a total of `r myProfile$total_cites` citations, and an `h` number of `r myProfile$h_index`.
 
