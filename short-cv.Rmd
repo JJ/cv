@@ -47,6 +47,6 @@ He has published several technical books under Apress (a Springer imprint) [@mer
 JJ's experience in programming goes back to 1983; he has not stopped being an
 active software developer since then. He is mainly proficient in Perl, Raku and
 JavaScript in any of its forms. Can use effectively R and Python, as well as
-other languages like Go.
+other languages like Go, C++ or zig.
 
 ## References
